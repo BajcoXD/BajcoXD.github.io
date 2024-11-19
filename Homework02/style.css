@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "PlayfairDisplay-regular";
+  src: local("PlayfairDisplay-regular"),
+    url("../Font/Playfair_Display/static/PlayfairDisplay-italic.ttf")
+      format("truetype"),
+    url("../Font/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 * {
   background-color: rgb(39, 39, 39);
   color: greenyellow;
@@ -27,7 +37,7 @@ body {
   padding: o;
 }
 .midle {
-    font-size: 150%;
+  font-size: 150%;
   text-align: center;
   letter-spacing: 1px;
   text-shadow: 2px 2px 1px rgb(12, 159, 245);
@@ -42,7 +52,6 @@ img {
   border-style: solid;
 }
 img:hover {
-  animation: forwards;
   transition: 0.7s ease-in;
   color: aqua;
 }
@@ -78,6 +87,9 @@ span:hover {
   color: chartreuse;
   transition: 0.5s ease-in-out;
 }
+span.no-hover:hover {
+  font-size: inherit;
+}
 a {
   text-decoration: none;
 }
@@ -96,4 +108,11 @@ a {
   border-style: solid;
   border-color: rgb(39, 39, 39);
   padding: 12px;
+}
+.borderlist {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 179);
+}
+.playfairdisplay {
+  font-family: "PlayfairDisplay-Italic", sans-serif;
 }
