@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "GaMaamli-regular";
+  src: url(/fonts/Ga_Maamli/GaMaamli-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  background-color: aqua;
+  border-color: rgb(5, 243, 243);
+  width: 100vw;
+  height: 100px;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 30px;
+}
+.logo-size {
+  height: 100%;
+  width: auto;
+}
+.logo-name {
+  font-size: 300%;
+  padding-right: 60%;
+  text-decoration: solid;
+  font-family: "GaMaamli-regular", sans-serif;
+  text-shadow: 2px 2px 2px blue;
+}
+header a {
+  font-size: 200%;
+  text-decoration: none;
+  font-family: "GaMaamli-regular", sans-serif;
+  text-shadow: 2px 2px 2px blue;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  top: 50px;
+}
+aside {
+  background-color: rgb(250, 250, 250);
+  flex-grow: 20;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px;
+  border: solid;
+  border-color: black;
+  border-width: 5px;
+  padding-right: 15px;
+}
+aside a {
+  font-size: 200%;
+  text-decoration: none;
+  font-family: "GaMaamli-regular", sans-serif;
+  color: black;
+  margin-top: 30px;
+}
+.main-section {
+  display: flex;
+  flex-grow: 400;
+  background-color: rgb(18, 59, 95);
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+article {
+  display: flex;
+  width: 260px;
+  height: 270px;
+  flex-direction: column;
+  margin: 20px;
+  border: solid white;
+}
+article img {
+  height: 85%;
+  width: auto;
+}
+article a {
+  font-family: "GaMaamli-regular", sans-serif;
+  color: aliceblue;
+  text-shadow: 1px 1px 0px aqua;
+  font-size: 170%;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  body {
+    flex-wrap: wrap;
+  }
+ .logo-name{
+  font-size: 150%;
+ }
+  header {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: space-between;
+    position: relative;
+  }
+  header a {
+    font-size: 100%;
+  }
+  main {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  main aside {
+    flex-direction: row;
+    align-items: center;
+    font-size: smaller;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+}
