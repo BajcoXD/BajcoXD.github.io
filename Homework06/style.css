@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "GaMaamli-regular";
-  src: url(/fonts/Ga_Maamli/GaMaamli-Regular.ttf);
+  font-family: "GaMaamli-Regular";
+  src: url("/fonts/Ga_Maamli/GaMaamli-Regular.ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
@@ -16,7 +16,6 @@ header {
   width: 100vw;
   height: 100px;
   justify-content: space-between;
-  position: relative;
   padding-right: 30px;
 }
 .logo-size {
@@ -27,13 +26,13 @@ header {
   font-size: 300%;
   padding-right: 60%;
   text-decoration: solid;
-  font-family: "GaMaamli-regular", sans-serif;
+  font-family: "GaMaamli-Regular", sans-serif;
   text-shadow: 2px 2px 2px blue;
 }
 header a {
   font-size: 200%;
   text-decoration: none;
-  font-family: "GaMaamli-regular", sans-serif;
+  font-family: "GaMaamli-Regular", sans-serif;
   text-shadow: 2px 2px 2px blue;
   text-decoration: none;
   color: black;
@@ -62,7 +61,7 @@ aside {
 aside a {
   font-size: 200%;
   text-decoration: none;
-  font-family: "GaMaamli-regular", sans-serif;
+  font-family: "GaMaamli-Regular", sans-serif;
   color: black;
   margin-top: 30px;
 }
@@ -86,7 +85,7 @@ article img {
   width: auto;
 }
 article a {
-  font-family: "GaMaamli-regular", sans-serif;
+  font-family: "GaMaamli-Regular", sans-serif;
   color: aliceblue;
   text-shadow: 1px 1px 0px aqua;
   font-size: 170%;
@@ -94,18 +93,13 @@ article a {
   text-align: center;
 }
 @media screen and (max-width: 480px) {
-  body {
-    flex-wrap: wrap;
+  .logo-name {
+    font-size: 150%;
+    padding-right: 0;
   }
- .logo-name{
-  font-size: 150%;
- }
   header {
-    display: flex;
     width: 100vw;
     height: 100px;
-    justify-content: space-between;
-    position: relative;
   }
   header a {
     font-size: 100%;
