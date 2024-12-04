@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main-box {
+  width: 500px;
+  height: 500px;
+  background-color: antiquewhite;
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row1 {
+  flex-direction: row;
+  width: 94.4%;
+  height: 10%;
+  background-color: whitesmoke;
+  border-bottom: 10px solid black;
+  flex-wrap: wrap;
+  border-right: 10px solid black;
+}
+.row12 {
+  float: left;
+  height: 100%;
+  width: 28%;
+  border-right: 10px solid black;
+  background-color: gray;
+}
+.golden3 {
+  float: right;
+  border-left: 10px solid black;
+  width: 35%;
+  height: 100%;
+  background-color: goldenrod;
+}
+.column1 {
+  width: 40%;
+  height: 75%;
+  border-left: 10px solid black;
+  border-bottom: 10px solid black;
+}
+.column2 {
+  float: left;
+  background-color: aquamarine;
+  width: 85%;
+  height: 100%;
+  border-right: 10px solid black;
+}
+.column3 {
+  height: 50%;
+  width: 100%;
+  background-color: goldenrod;
+  border-bottom: 10px solid black;
+}
+.half {
+  background-color: white;
+  width: 100%;
+  height: 85%;
+  border-bottom: 10px solid black;
+  flex-wrap: wrap;
+}
+.left {
+  float: left;
+  width: 55%;
+  height: 40%;
+  background-color: gray;
+  border-right: 10px solid black;
+}
+.yellow {
+  background-color: goldenrod;
+  width: 100%;
+  height: 60%;
+  border-bottom: 10px solid black;
+}
+.bottom-row {
+  height: 25%;
+  width: 100%;
+  background-color: red;
+}
+.golden {
+  background-color: goldenrod;
+  width: 94.5%;
+  height: 100%;
+  border-right: 10px solid black;
+  float: left;
+}
+.bottom2 {
+  background-color: gainsboro;
+  float: right;
+  height: 100%;
+  width: 90%;
+  border-left: 10px solid black;
+  flex-wrap: wrap;
+}
+.blue-box {
+  float: right;
+  background-color: blue;
+  height: 90%;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+  width: 40%;
+}
+.gray-box {
+  float: left;
+  background-color: grey;
+  border-right: 10px solid black;
+  width: 30%;
+  height: 100%;
+}
+.black-box {
+  background-color: black;
+  height: 55%;
+  width: 100%;
+  border-bottom: 10px solid black;
+  border-top: 10px solid black;
+}
+.white-box {
+  float: left;
+  width: 30%;
+  height: 90%;
+  border-bottom: 10px solid black;
+  background-color: aliceblue;
+}
+.gray-box2 {
+  background-color: gray;
+  width: 100%;
+  height: 67%;
+  border-bottom: 10px solid black;
+}
+.row-left {
+  display: flex;
+  border-bottom: 10px solid black;
+  width: 60%;
+  height: 75%;
+  background-color: red;
+  float: left;
+  flex-direction: column;
+  position: relative;
+}
+.left-row {
+  width: 18.5%;
+  height: 100%;
+  background-color: aquamarine;
+  border-right: 10px solid black;
+  flex-direction: column;
+}
+.left-row2 {
+  background-color: aliceblue;
+  width: 100%;
+  height: 35%;
+  border-bottom: 10px solid black;
+  flex-direction: column;
+}
+.bottom3 {
+  margin-top: auto;
+  width: 100%;
+  height: 22%;
+  background-color: aquamarine;
+  float: right;
+}
+.bottom33 {
+  background-color: brown;
+  float: right;
+  height: 100%;
+  width: 84.7%;
+  border-left: 10px solid black;
+  border-top: 10px solid black;
+}
+.bottom333 {
+  width: 53.8%;
+  height: 100%;
+  background-color: aliceblue;
+  float: right;
+  border-left: 10px solid black;
+}
