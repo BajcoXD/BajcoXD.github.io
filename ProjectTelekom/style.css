@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "Roboto-Light";
+  src: url("/fonts/Roboto/Roboto-Light.ttf");
+  font-family: "Roboto-Bold";
+  src: url("/fonts/Roboto/Roboto-Bold.ttf");
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  width: 100vw;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  position: fixed;
+}
+header img {
+  padding-left: 8%;
+}
+.header-top {
+  background-color: white;
+  height: 35%;
+  width: 82%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 15px;
+  padding-right: 7%;
+}
+header a {
+  text-decoration: none;
+  padding-left: 12px;
+  font-size: 80%;
+  font-family: "Roboto-Light", sans-serif;
+  color: black;
+}
+.header-top-right {
+  float: right;
+  font-size: 70%;
+}
+header div a b {
+  font-family: "Roboto-Regular", sans-serif;
+}
+.header-bottom {
+  padding-top: 60px;
+  font-size: 130%;
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bolder;
+  padding-left: 3.2%;
+  word-spacing: 32px;
+}
+
+.search-container {
+  padding-top: 60px;
+  padding-left: 10px;
+  height: 90px;
+  display: flex;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+}
+.search-container:hover input {
+  width: 200px;
+}
+.search-container input {
+  width: 0;
+  outline: none;
+  border: none;
+  transition: 400ms;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding-left: 150px;
+  height: 30px;
+}
+
+a img {
+  flex-direction: row;
+  width: auto;
+  height: 20px;
+  padding-right: 25px;
+}
+.header-bottom-right {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+a img:hover {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(80%) saturate(6246%)
+    hue-rotate(308deg) brightness(96%) contrast(96%);
+}
+.header-top a:hover {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(80%) saturate(6246%)
+    hue-rotate(308deg) brightness(96%) contrast(96%);
+}
+.header-bottom a:hover {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(80%) saturate(6246%)
+    hue-rotate(308deg) brightness(96%) contrast(96%);
+}
+.background-img{
+  background-image: url("/telekomlogo/telekom2323.jpg");
+  width: 100vw;
+  height: 900px;
+  background-size: 1920px auto;
+  display: flex;
+}
+.more{
+  color: white;
+  border: 3px #e20074;
+  border-radius: 10px;
+  flex-direction: column-reverse;
+  font-size: larger;
+}
