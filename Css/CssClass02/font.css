@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "SourGummy_Expanded-Black";
+  src: local("SourGummy_Expanded-Black"),
+    url("googelfont/Sour_Gummy/static/SourGummy_Expanded-Black.ttf")
+      format("truetype"),
+    url("googelfont/Sour_Gummy/static/SourGummy-Bold.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "SourGummy_Expanded-Black", sans-serif;
+  
+}
+
+p {
+  font-family: "SourGummy-Bold";
+}
+
+.oblique-font {
+  font-style: oblique;
+}
+
+.italic-font {
+  font-style: italic;
+}
+.thin {
+  font-family: "Doto", sans-serif;
+}
+.size {
+  font-size: 2em;
+  text-transform: lowercase;
+  text-decoration: underline wavy;
+  letter-spacing: 5px;
+  /* text-transform ti pravi golemina na bukvi */
+  /* font-size: 2em */
+  /* font-size: 200% */
+  /* rem zima od root i duplira golemina */
+  /* em duplira zadadena specificna golemina */
+}
+.text-decoration{
+    text-decoration: line-through dashed red;
+    
+}
+.paragraph-text-alaign{
+    text-align: center;
+}
+.text-shadow{
+    text-shadow: 3px 3px 10px yellowgreen; 
+    background-color: black;
+    color: white;
+}
+p::first-line{
+    color: red;
+
+}
+p::first-letter{
+    font-size: 300%;
+}
