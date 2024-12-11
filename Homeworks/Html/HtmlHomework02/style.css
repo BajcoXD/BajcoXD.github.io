@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url(/Font/Playfair_Display/static/PlayfairDisplay-Italic.ttf);
+}
+* {
+  background-color: rgb(39, 39, 39);
+  color: greenyellow;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  gap: 500px;
+  align-items: center;
+}
+h1 {
+  color: greenyellow;
+  text-align: center;
+  border-style: solid;
+  background-color: black !important;
+}
+
+body {
+  border-left: 5px green;
+  border-right: 5px green;
+  margin: o;
+  padding: o;
+}
+.midle {
+  font-size: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 1px rgb(12, 159, 245);
+  word-spacing: 30px;
+  border-style: solid;
+  padding: 5px;
+  background-color: aqua;
+}
+img {
+  height: 500px;
+  width: auto;
+  border-style: solid;
+}
+img:hover {
+  transition: 0.7s ease-in;
+  color: aqua;
+}
+article {
+  width: 200px;
+  text-shadow: 2px 1px 0px rgb(77, 77, 77);
+}
+ul,
+ol {
+  padding: 20px;
+  margin: 0;
+  list-style: decimal;
+}
+article {
+  border-style: solid;
+  background-color: black;
+  border-width: 5px;
+  padding: 7px;
+  border-radius: 10px;
+}
+article::first-letter {
+  color: red;
+  font-size: 200%;
+}
+span {
+  text-decoration: none;
+}
+span:visited {
+  color: green;
+}
+span:hover {
+  font-size: larger;
+  color: chartreuse;
+  transition: 0.5s ease-in-out;
+}
+span.no-hover:hover {
+  font-size: inherit;
+}
+a {
+  text-decoration: none;
+}
+.nvidia4060 {
+  letter-spacing: 1px;
+  color: greenyellow;
+  text-decoration: cornsilk dotted underline;
+}
+.midle2 {
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-decoration-color: rgb(143, 255, 143);
+  text-decoration-style: dotted;
+  font-size: 220%;
+  border-style: solid;
+  border-color: rgb(39, 39, 39);
+  padding: 12px;
+}
+.borderlist {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 179);
+}
+.playfairdisplay {
+  font-family: "PlayfairDisplay-Italic", sans-serif;
+}
