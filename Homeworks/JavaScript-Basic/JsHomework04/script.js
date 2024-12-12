@@ -14,3 +14,4 @@ function atm() {
 }
 
 alert(atm(amount));
+document.getElementById(`atmm`).innerText = atm(amount);
