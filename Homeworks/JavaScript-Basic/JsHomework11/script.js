@@ -1,10 +1,14 @@
 let dog = {
-  dogName: 'Bak',
-  kind: 'Maltezer',
-  size: 'Small',
- speak: function () {
-  return `${this.dogName} says: Feed me some food!`
- }
-}
-console.log(dog);
-console.log(dog.speak());
+  dogName: '',
+  kind: '',
+  size: '',
+  speak: function () {
+    return `${this.dogName} says: Feed me some food!`;
+  }
+};
+
+dog.dogName = prompt("What's your dog's name?");
+dog.kind = prompt("What kind is your dog?");
+dog.size = prompt("What size is your dog?");
+
+alert(dog.speak())
