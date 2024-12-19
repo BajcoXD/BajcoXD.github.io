@@ -13,7 +13,7 @@ function story() {
   let mood = inputArray[1];
   let activity = inputArray[2];
 
-  let storyLine = `This is ${name}. ${name} is a nice person. Today they are ${mood}. They are ${activity} all day. The end.`;
+  let storyLine = `This is ${name}. ${name} is a nice person! Today they are ${mood}. They are ${activity} all day. The end.`;
 
   return storyLine;
 }
