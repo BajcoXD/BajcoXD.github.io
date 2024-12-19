@@ -9,7 +9,7 @@ let book = {
     if ((this.bookOneReadingStatus === "yes")) {
       return `Then you have to read ${this.bookTwoTitle}`;
     } else if((this.bookOneReadingStatus === "no")) {
-      return `${this.bookOneTitle} is a great book read it all the way`;
+      return `${this.bookOneTitle} is a great book read it all the way!`;
     }
   },
 };
