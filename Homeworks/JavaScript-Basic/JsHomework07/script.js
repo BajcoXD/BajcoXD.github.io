@@ -1,4 +1,4 @@
-let array = ['Hello', 'there', 'my', 'name', 'is', 'Viktor']
+let array = ['Hello', 'there', 'my', 'name', 'is', 'Simona']
 let firstWord = array[0]
 let secondWord = array[1]
 let thirdWord = array[2]
