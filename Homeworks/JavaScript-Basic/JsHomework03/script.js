@@ -1,6 +1,6 @@
 function years() {
   let age = Number(prompt("Enter age: "));
-  let conversion = Number(prompt("1-human to dog or 2-dog to human"));
+  let conversion = Number(prompt("1-human to dog or 2-dog to human."));
 
 if (conversion === 1) {
   return age * 7;
