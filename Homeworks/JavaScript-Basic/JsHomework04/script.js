@@ -9,7 +9,7 @@ function atm() {
     balance -= amount;
     return `You withdrew ${amount}, and you have ${balance} remaning`;
   } else {
-    return "Not enough balance";
+    return "Not enough balance.";
   }
 }
 
