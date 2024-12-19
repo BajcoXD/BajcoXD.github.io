@@ -12,4 +12,4 @@ let priceAfterTax = price + taxCost;
 
 let totalPrice = priceAfterTax * phones;
 
-console.log("The total cost would be: ", totalPrice, "$");
+console.log("The total price would be: ", totalPrice, "$");
