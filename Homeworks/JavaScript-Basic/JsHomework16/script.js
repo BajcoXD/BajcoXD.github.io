@@ -18,7 +18,7 @@ function list() {
     contactList.push({ name: name, phoneNumber: phoneNumber });
 
     alert(
-      `Contact "${name}" with phone number "${phoneNumber}" has been added.`
+      ` Contact "${name}" with phone number "${phoneNumber}" has been added.`
     );
   }
 
