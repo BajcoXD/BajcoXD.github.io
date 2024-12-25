@@ -10,7 +10,7 @@ function toDoList() {
     }
   }
 
-  console.log("To-Do List:", array); // array to the console
+  console.log("To-Do List:", array); // show git array to the console
   return array;
 }
 
