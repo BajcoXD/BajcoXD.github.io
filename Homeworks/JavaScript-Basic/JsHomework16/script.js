@@ -3,15 +3,18 @@ function list() {
 
   for (let i = 0; ; i++) {
     let name = prompt("Enter New contact name:");
-    if (name === null || name === "") {
-      break;
+    if (!name || name.trim() === "") {
+      alert("Invalid name. Exiting...");
+      break; // Exit the loop if name is invalid
     }
 
     let phoneNumber = prompt("Enter the phone number:");
-    if (phoneNumber === null || name === "") {
-      break;
+    if (!phoneNumber || isNaN(phoneNumber) || phoneNumber.trim() === "") {
+      alert("Invalid phone number. Exiting...");
+      break; // Exit the loop if phone number is invalid
     }
 
+    // Add the contact to the list
     contactList.push({ name: name, phoneNumber: phoneNumber });
 
     alert(
@@ -26,7 +29,7 @@ let allContacts = list();
 
 console.log("Phone Book:");
 allContacts.forEach((contact, index) => {
-  console.log(`
-      ${index + 1}. Name: ${contact.name}, Phone: ${contact.phoneNumber}
-`);
+  console.log(
+    `${index + 1}. Name: ${contact.name}, Phone: ${contact.phoneNumber}`
+  );
 });
