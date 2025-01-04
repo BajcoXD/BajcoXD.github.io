@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      td {
+        padding: 5px 10px;
+        text-align: center;
+      }
+      input,
+      button {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Homework</h1>
+        <h2>Create a dynamic table</h2>
+        <br />
+        <label for="rows">Rows:</label>
+        <input
+          type="number"
+          id="rows"
+          min="1"
+          placeholder="Enter number of rows"
+        />
+        <label for="columns">Columns:</label>
+        <input
+          type="number"
+          id="columns"
+          min="1"
+          placeholder="Enter number of columns"
+        />
+        <button id="createTable">Create table</button>
+        <div id="tableContainer"></div>
+      </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

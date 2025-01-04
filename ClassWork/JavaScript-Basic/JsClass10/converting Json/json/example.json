@@ -1,0 +1,9 @@
+{
+  "trainer": "Viksa",
+  "assistant": "Bajco",
+  "students": ["Angel", "Sandra", "Simona", "Vic"],
+  "academy": "QinShift Academy",
+  "group": "G2",
+  "numberOfStudents": 20,
+  "onSite": true
+}
