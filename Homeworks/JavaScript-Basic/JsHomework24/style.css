@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 110%;
+}
+form {
+  font-weight: bolder;
+  margin: 15px;
+}
+input,
+label {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.header1 {
+  border: 2px solid black;
+  width: 27%;
+  height: auto;
+  background-color: rgb(8, 8, 8);
+  color: aliceblue;
+}
+.contact-list {
+  border: 2px solid black;
+  width: 27%;
+  height: 500px;
+  background-color: aliceblue;
+  color: black;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden;
+}
+.contact-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contact-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.contact-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.ContactBtn {
+  color: green;
+  background-color: rgb(36, 36, 36);
+  padding: 6px;
+  border-radius: 7px;
+}
+.ContactBtn:active {
+  box-shadow: 0 0 10px 5px yellow;
+  background-color: yellow; 
+}

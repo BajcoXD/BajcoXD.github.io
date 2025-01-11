@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Phone Book</title>
+  </head>
+  <body>
+    <div class="header1">
+      <form action="contact-list-form">
+        <label for="firstName">Enter first name:</label>
+        <input type="text" id="firstName" placeholder="First Name" /><br>
+        <label for="lastName">Enter last name:</label>
+        <input type="text" id="lastName" placeholder="Last Name" /><br>
+        <label for="phoneNumber">Enter phone number:</label>
+        <input type="number" id="phoneNumber" placeholder="389+" /><br>
+        <input type="button" id="saveContactBtn" class="ContactBtn" value="Save">
+        <input type="button" id="editContactBtn" class="ContactBtn" value="Edit">
+        <input type="button" id="deleteContactBtn" class="ContactBtn" value="Delete">
+      </form>
+    </div>
+    <!-- Contact list box -->
+    <div class="contact-list" id="list-contacts">
+        
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
