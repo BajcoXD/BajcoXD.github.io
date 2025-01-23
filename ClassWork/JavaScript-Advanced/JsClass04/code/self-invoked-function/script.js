@@ -8,7 +8,7 @@ console.log("============ SELF-INVOKED FUNCTIONS ========");
 
 // https://dummyjson.com/products/1
 
-() => {
+(() => {
   const productUrl = "https://dummyjson.com/products/1";
   const productContainer = document.getElementById("product-container");
   fetch(productUrl)
@@ -18,6 +18,13 @@ console.log("============ SELF-INVOKED FUNCTIONS ========");
       productContainer.innerHTML = `
     <h3>${product.title}</h3>
     <p>${product.description}</p>
-    <p>${product.price}</p>`;
+    <p>${product.price}</p>
+    `;
     });
-};
+})();
+// document.addEventListiner("DOMContentLoaded", () => {})
+
+(function sayHello(name) {
+  console.log(`Hello ${name}!`);
+})("Viktor");
+// sayHello("Viktor")
