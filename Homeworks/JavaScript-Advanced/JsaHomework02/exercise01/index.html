@@ -7,11 +7,7 @@
   </head>
   <body>
     <h1>Star Wars Planets</h1>
-    <button
-      onclick="fetchPlanets('https://swapi.py4e.com/api/planets/?page=1')"
-    >
-      Load Planets
-    </button>
+    <button onclick="fetchPlanets(1)">Load Planets</button>
     <table>
       <thead>
         <tr>
@@ -23,6 +19,10 @@
       </thead>
       <tbody id="planetTableBody"></tbody>
     </table>
+
+    <!-- Buttons will be added dynamically -->
+    <div id="buttonsContainer"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
