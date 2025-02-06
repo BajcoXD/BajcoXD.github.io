@@ -37,6 +37,7 @@ function step6(callback) {
 function step7(callback) {
   setTimeout(() => {
     console.log("Step 7 completed");
+    callback();
   }, 1000);
 }
 
@@ -46,7 +47,9 @@ step1(() => {
       step4(() => {
         step5(() => {
           step6(() => {
-            step7;
+            step7(() => {
+              console.log("Pyramid of doom completed");
+            });
           });
         });
       });
