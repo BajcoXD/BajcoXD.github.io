@@ -80,12 +80,52 @@ function step3() {
 }
 
 function step4() {
-    return new Promise((resolve) => {
-        resolve("Final Step Completed")
-    })
+  return new Promise((resolve) => {
+    resolve("Final Step Completed");
+  });
 }
 step1()
   .then(() => step2())
   .then(() => step3())
+  .then(() => step4())
+  .then((message) => console.log(message))
   .catch((error) => console.log(error))
-  .finally(() => console.log(`Everything is completed at ${new Date().toLocaleTimeString()}`))
+  .finally(() =>
+    console.log(`Everything is completed at ${new Date().toLocaleTimeString()}`)
+  );
+
+//
+console.log("");
+console.log("========= Promise All =============");
+
+function taskA() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Task A Completed");
+    }, 5000);
+  });
+}
+function taskB() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Task B Completed");
+    }, 3000);
+  });
+}
+function taskC() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Task C Completed");
+    }, 1000);
+  });
+}
+
+let taskCPromise = taskC();
+console.log(taskCPromise);
+
+Promise.all([taskA(), taskB(), taskCPromise])
+  .then((resultArray) => {
+    console.log("All Task COMPLETED !");
+    console.log(resultArray);
+  })
+  .catch((error) => console.log(error));
