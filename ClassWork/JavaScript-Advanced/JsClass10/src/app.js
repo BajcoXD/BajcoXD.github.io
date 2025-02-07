@@ -136,11 +136,15 @@ function renderShipTable(data) {
         ship.ship_Class
       )
   );
-  const headersHtml = tableHeaders.starships.map(
-    (h) => `
+  const headersHtml = tableHeaders.starships
+    .map(
+      (h) => `
     <th>${h}</th>`
-  ).join();
-  const shipRowHtml = ships.map(ship => `
+    )
+    .join();
+  const shipRowHtml = ships
+    .map(
+      (ship) => `
     <tr>
     <td>${ship.name}</td>
     <td>${ship.model}</td>
@@ -149,9 +153,14 @@ function renderShipTable(data) {
     <td>${ship.peopleCapacity}</td>
     <td>${ship.shipClass}</td>
     </tr>
-    `)
+    `
+    )
+    .join("");
+  elements.resultDiv.innerHTML = generateTableHtml(headersHtml, shipRowHtml);
 }
-p;
+
+const togglePaginationButtons = 
+
 // 4) HANDLING EVENTS
 elements.peopleBtn.addEventListener("click", async () => {
   // const people = await getDataAsync("people");
