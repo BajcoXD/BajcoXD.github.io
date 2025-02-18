@@ -33,15 +33,12 @@ console.log(firstEmployee);
 firstEmployee.printInfo();
 
 class Developer {
-    
-  constructor() {
-   
-  }
+  constructor() {}
   code() {
     console.log(`${this.firstName} is doing magic :D`);
   }
 }
 
 const firstDeveloper = new Employee("Viktor", "Stojanovski", 19, 1000);
-const newDeveloper = [...firstDeveloper, ...Developer]
+const newDeveloper = [...firstDeveloper, ...Developer];
 console.log();
