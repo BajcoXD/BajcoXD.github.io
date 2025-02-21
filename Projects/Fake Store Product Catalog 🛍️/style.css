@@ -22,6 +22,9 @@
   font-family: "BebasNeue-Regular";
   src: url("./assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf");
 }
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -225,87 +228,81 @@ html {
   background: linear-gradient(to top, gray, white);
   border-bottom: 3px solid rgb(4, 95, 155);
 }
+
 h5 {
   font-size: 50px;
   font-family: "BebasNeue-Regular", sans-serif;
   word-spacing: 15px;
   letter-spacing: 1px;
 }
+
 #product1 p {
   padding-bottom: 10px;
   font-size: larger;
   color: rgb(119, 119, 119);
 }
+
 #product1 .pro-container {
   width: 100%;
-  height: 2100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* This centers all items */
-  gap: 195px; /* Replaces column-gap to apply to both rows & columns */
+  justify-content: center;
+  gap: 20px;
 }
 
-#product1 .pro-container2 {
-  width: 100%;
-  height: 1800px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 195px;
-}
-/* == CODE FOR THE CONTAINERS == */
-/* ON THE FEATURED SECTION */
 .pro {
-  width: 450px;
-  height: 500px;
-  border: 1px solid #acbdae;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  padding: 2px;
-}
-.pro2 {
-  width: 450px;
-  height: 500px;
-  border: 1px solid #acbdae;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  padding: 2px;
-}
-.pro-text {
-  display: flex;
-  padding-top: 15px;
-}
-#product1 .pro p {
-  font-size: 30px;
-  padding-left: 40px;
-  font-family: "SedgwickAve-Regular", sans-serif;
-  color: rgb(28, 2, 61);
-  padding-right: 50px;
-}
-#product1 .pro span {
-  font-size: 30px;
-  right: 0;
-  border: 1px solid;
-  border-radius: 10px;
-  margin: 2px;
-  padding: 7px;
-  color: goldenrod;
-  background-color: black;
-}
-/* IMGS */
-.pro img {
-  width: auto;
+  width: 300px;
   height: 400px;
-}
-.pro .preworkout-p1 {
-  width: 80%;
+  border: 1px solid #acbdae;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-left: 40px;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pro img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.pro-text {
+  margin-top: 10px;
+}
+
+.pro-text p {
+  font-size: 20px;
+  color: rgb(28, 2, 61);
+}
+
+.pro-text span {
+  font-size: 18px;
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.pagination-buttons {
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(4, 95, 155);
+  color: white;
+}
+
+.pagination-buttons button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
 }
 /* ================= BANNER EXPLORE SECTION ================== */
 #sm-banner {
@@ -447,4 +444,187 @@ footer .col a {
 }
 footer .col a:hover {
   color: rgb(27, 27, 27);
+}
+/*=============== Category Buttons ===========*/
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #45a049;
+}
+
+/* Pagination Buttons */
+.pagination-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.pagination-btn:hover {
+  background-color: #007b9e;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Add to Cart Button */
+.add-to-cart-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+/*================ Cart Popup =================*/
+.cart-popup {
+  position: fixed;
+  top: 0;
+  left: -400px; /* Hidden by default */
+  width: 400px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the checkout button stays at the bottom */
+  height: 100%; /* Adjust this to fit your design */
+  padding: 10px;
+  overflow-y: auto; 
+}
+
+.cart-popup.open {
+  left: 0; /* Show the popup */
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-header h3 {
+  margin: 0;
+}
+
+#close-cart-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-items {
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100% - 120px);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.cart-item-controls button:hover {
+  background-color: #007b9e;
+}
+
+.cart-footer {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+#checkout-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout-btn:hover {
+  background-color: #45a049;
+}
+.cart-popup .checkout-btn {
+  margin-top: 10px; /* Adjust this value to move it higher */
+  position: relative;
+  top: -10px; /* Moves it up slightly */
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.cart-popup .checkout-btn:hover {
+  background: #0056b3;
 }
