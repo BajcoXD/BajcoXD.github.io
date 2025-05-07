@@ -19,7 +19,7 @@
   bottom: 0;
   width: 3px;
   z-index: -1;
-  background: linear-gradient(to bottom, #ff00ff 0%, #c702c7 50%, #ff00ff 100%);
+  background: linear-gradient(to bottom,  #ff00ff 0%, rgb(199, 30, 94)25%, #ff00ff 50%, rgb(199, 30, 94)75%, #ff00ff 100%);
   background-size: 100% 300%;
   animation: borderFlowSmooth 5s linear infinite;
 }
@@ -61,6 +61,7 @@
   height: auto;
   max-height: 100%;
   object-fit: contain;
+  padding-bottom: 90px;
 }
 
 .aboutUs-headers {
