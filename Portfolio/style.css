@@ -173,6 +173,7 @@ section {
 .content .typewriter-text {
   color: #077b32;
   text-shadow: 0 0 1px #077b32;
+  font-weight: 600;
 }
 
 .content p {

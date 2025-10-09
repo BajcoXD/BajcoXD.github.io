@@ -6,19 +6,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css" />
     <title>Viktor Portfolio</title>
   </head>
   <body>
     <nav>
       <div class="nav-container">
-        <div class="logo">Viktor <span>Stojanovski</span></div>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">Viktor <span>Stojanovski</span></div>
         <div class="links">
-          <div class="link"><a href="#">Home</a></div>
-          <div class="link"><a href="#">About</a></div>
-          <div class="link"><a href="#">Skills</a></div>
-          <div class="link"><a href="#">Services</a></div>
-          <div class="link"><a href="#">Contact</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
       </div>
@@ -36,14 +37,14 @@
     <section>
       <div class="main-container">
         <div class="image">
-          <img src="./img/Viktor-Stojanovski.jpg" alt="Viktor" />
+          <img data-aos="zoom-out" data-aos-duration="1500" src="./img/Viktor-Stojanovski.jpg" alt="Viktor" />
         </div>
         <div class="content">
-          <h1>Hey I'm <span>Viktor</span></h1>
-          <div class="tpyewriter">
-            I'm a<span class="typewriter-text"> Web Deveolper</span
-            ><label for=""></label>
-            <p>
+          <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Viktor</span></h1>
+          <div class="tpyewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+            I'm a <span class="typewriter-text"></span
+            ><label for="">|</label>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
               qui?
             </p>
@@ -51,29 +52,33 @@
               <a
                 href="https://github.com/BajcoXD"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"
                 ><i class="fa-brands fa-github"></i
               ></a>
               <a
                 href="https://www.instagram.com/stojanovskii5/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/viktor-stojanovski-428077386/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
             <div class="btn">
-              <button>Hire me</button>
+              <button data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">Hire me</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
